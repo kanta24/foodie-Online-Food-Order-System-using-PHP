@@ -1,0 +1,388 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------my code starts here-------------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    font-family: Lato,Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
+    text-rendering: optimizeLegibility;
+}
+a{
+    text-decoration: none;
+    color: #111;
+    font-family: 'Lato','Arial', sans-serif;
+}
+header{
+    width: 100%;
+    background-color: #fff;
+}
+
+/*--------------signup, login------------------*/
+.signupbody{
+    background-color: #333;
+}
+.signup{
+    width: 500px;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 10px;
+}
+.signup form, .foodform form{
+    width: 100%;
+}
+.signup form input, .foodform form input{
+    width: 100%;
+    height: 40px;
+    margin: 6px 0;
+    padding: 4px;
+    font-family: lato,Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    border: 1px solid #8bad8a;
+    border-radius: 5px;
+}
+.signup form label{
+    display: inline-block;
+    font-size: 15px;
+}
+.signup form label input{
+    width: 15px;
+    margin-right: 4px;
+}
+.signup h1{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    color: #139b0f;
+}
+.login-header{
+    font-size: 25px !important;
+}
+.userSignup h1{
+    margin: 20px 37%;
+}
+.signup button,.foodform button{
+    width: 200px;
+    height: 50px;
+    margin: 10px 145px;
+    font-size: 25px;
+    background-color: #139b0f;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 5px;
+}
+.signup button:hover,.foodform button:hover{
+    background-color: #15a810;
+}
+/*-------------------------------------------------------------------------------*/
+/*-----------------add food-------------------------*/
+
+.food{
+    background-image: url(images/addFood.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.foodform{
+    width: 400px;
+    margin: 80px auto;
+    background-color: #139b0f;
+    padding: 10px;
+}
+.foodform h1{
+    margin: 20px 15%;
+    font-size: 20px;
+    color: #fff;
+}
+.foodform button{
+    margin-left: 95px ;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------restaurant index--------------------------------*/
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.item{
+    margin: 40px 0;
+}
+.name-price{
+    height: 40px;
+    width: 100%;
+}
+.name-price p{
+    float: left;
+}
+.price{
+    float: right !important;
+}
+.ingredients p{
+    margin-left: 10px;
+    float: left;
+}
+.ingredients form{
+    float: right;
+}
+.singleitem{
+    width: 100%;
+    height: 130px;
+    padding: 20px; 
+}
+.cart{
+    float: right;
+    border: 1px solid #139b0f; 
+}
+
+/*----------------------------------------------------------------*/
+/*-------------------------home page/ nav ------------------------------*/
+.homeHeader{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.homeHeader div{
+    width: 80%;
+    margin: 0 auto;
+}
+.homeHeader nav, nav{
+    margin-top: 0;
+}
+.homeHeader nav img, nav img{
+   
+    margin-top: 0;
+    height: 120px;
+    width: 120px;
+
+}
+.homeHeader nav ul, nav ul{
+    float: right;
+    margin-top: 51px;
+}
+.homeHeader nav ul li,nav ul li{
+    display: inline-block;
+}
+.homeHeader nav ul li a,nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-family: lato,Arial,sans-serif;
+    font-weight: 300;
+    margin-left: 40px;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 5px;
+}
+nav ul li a{
+    color: #139b0f;
+}
+.homeHeader nav ul li a:hover,nav ul li a:hover{
+    border-bottom: 1px solid #27ae60;
+    color: #27ae60;
+}
+.restaurantLandingPage{
+    height: 240px;
+    width: 300px;
+    float: left;
+    margin: 20px;
+    font-size: 15px;
+    overflow: hidden;
+}
+.restaurantLandingPage img{
+    width: 100%;
+    height: 180px;
+    transition: transform .5s;
+}
+.restaurantLandingPage img:hover{
+    transform: scale(1.15);
+}
+.restaurantLandingPage p{
+    font-family: lato, Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.restaurantLandingPage:hover{
+    color: #139b0f;
+}
+.restaurantpic{
+    width: 100%;
+    height: 420px;
+}
+.restaurantpic img{
+    height: 400px;
+    width: 100%;
+}
+.restaurantpic a{
+    font-size: 15px;
+    float: right;
+}
+.restaurantpic a:hover{
+    color: #139b0f;
+}
+.searchbox{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+.searchbox input{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: lato, Arial, sans-serif;
+    font-weight: 300;
+}
+.searchbox button{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+    font-family: lato, Arial, sans-serif;
+    font-weight: 400;
+    transition: background-color .8s;
+}
+.searchbox button:hover{
+    background-color: #27ae60;
+    color: #fff;
+}
+.restaurants{
+    text-align: center;
+    font-size: 40px;
+    color: #139b0f;
+    font-family: lato, Arial, sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+/*--------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------*/
